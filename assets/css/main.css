@@ -4,7 +4,9 @@ body,h1,h3{
     letter-spacing:.01rem;
     line-height:1.75rem
 }
+a{
+text-decoration:none;
+}
 iconLink{
-	color:#494949
-	width:120px
+	color: #777777
 }
