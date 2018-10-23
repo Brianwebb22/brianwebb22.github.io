@@ -3,7 +3,9 @@ body {
     color:#2e2e2e;
     letter-spacing:.01rem;
     line-height:1.75rem;
-	margin: 20%;
+	margin-left: 20%;
+	margin-right: 20%;
+
 }
 a {
 text-decoration:none;
@@ -17,7 +19,10 @@ text-decoration:none;
 	grid-template-areas: "sidebar main main main" "sidebar main main main" "sidebar main main main";
 }
 .sidebar { grid-area: sidebar; }
-.main { grid-area: main; }
+.main {
+	grid-area: main;
+	margin-top: 5%;
+}
 .iconLink {
 	color: #777777
 }
