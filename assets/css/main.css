@@ -1,8 +1,9 @@
-body,h1,h3 {
+body {
     font-family: 'Chakra Petch', sans-serif;
     color:#2e2e2e;
     letter-spacing:.01rem;
-    line-height:1.75rem
+    line-height:1.75rem;
+	margin: 20%;
 }
 a {
 text-decoration:none;
