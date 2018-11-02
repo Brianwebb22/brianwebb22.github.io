@@ -1,28 +1,94 @@
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    color:#2e2e2e;
-    letter-spacing:.01rem;
-    line-height:1.75rem;
-	margin-left: 20%;
-	margin-right: 20%;
+  font-family: 'Raleway', sans-serif;
+  color: #2e2e2e;
+  letter-spacing: .01rem;
+  line-height: 1.75rem;
+  margin: 0px;
+  padding: 0px;
+}
 
-}
 a {
-text-decoration:none;
+  text-decoration: none;
 }
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.center {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* .grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "sidebar main main main""sidebar main main main""sidebar main main main";
+  background-color: #dbdbdb;
+} */
 .grid-container {
-	display: grid;
-	height: 100%;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 1px 1px;
-	grid-template-areas: "sidebar main main main" "sidebar main main main" "sidebar main main main";
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "sidebar main";
+  background-color: #dbdbdb;
 }
-.sidebar { grid-area: sidebar; }
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "sideBar"
+      "main";
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      /* Side Bar */
+      minmax(75px, auto)
+      /* Main */
+      1fr
+  }
+
+  nav, aside {
+    margin: 0;
+  }
+}
+
+.sidebar {
+  background-color: purple;
+  grid-area: sidebar;
+  margin-left: 0.5rem;
+}
+
+.square-100 {
+  height: 100px;
+  width: 100px;
+}
+
 .main {
-	grid-area: main;
-	margin-top: 5%;
+  grid-area: main;
+  padding-top: 5%;
+  background-color: white;
 }
+
 .iconLink {
-	color: #777777
+  color: #777777
 }
