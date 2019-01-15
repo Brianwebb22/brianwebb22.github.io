@@ -47,7 +47,7 @@ p {
 } */
 .grid-container {
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas: "sidebar main";
@@ -87,8 +87,24 @@ p {
   grid-area: main;
   padding-top: 5%;
   background-color: white;
+  padding-left: 5%;
 }
 
 .iconLink {
-  color: #777777
+  color: #777777;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.section {
+
+}
+
+.sectionLabel {
+	font-size: 18px;
+}
+
+.sectionContent {
+	font-size: 12px;
+	width: 75%;
 }
